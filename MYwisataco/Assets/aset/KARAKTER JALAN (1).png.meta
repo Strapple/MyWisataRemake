@@ -1,0 +1,510 @@
+fileFormatVersion: 2
+guid: 1d49463c1f598c84e8e1f178622f429a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1705
+        width: 297
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254f385b363336c4fa673ef9249d4a47
+      internalID: -633626480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_1
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 1697
+        width: 633
+        height: 1222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d50387ecf7dbbb4aa82893c99beb55d
+      internalID: -753518433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_2
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 1691
+        width: 743
+        height: 1235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1de343e980958e4aa975140a7851983
+      internalID: 1214114600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_3
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 1701
+        width: 509
+        height: 1223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fcc3357c037a1438e20af4081ea209
+      internalID: 160329680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_4
+      rect:
+        serializedVersion: 2
+        x: 5124
+        y: 1710
+        width: 379
+        height: 1214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdb3fd76f67e814c9079e2691bfac1a
+      internalID: 2060559368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_5
+      rect:
+        serializedVersion: 2
+        x: 6242
+        y: 1696
+        width: 536
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2952cc59c71e5e645a0243626be9e505
+      internalID: 1655829321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_6
+      rect:
+        serializedVersion: 2
+        x: 7311
+        y: 1715
+        width: 546
+        height: 1170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb09968a156c0447a976563b63005b5
+      internalID: 134669783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_7
+      rect:
+        serializedVersion: 2
+        x: 8361
+        y: 1710
+        width: 551
+        height: 1170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bd9fb592456ac4bae2464e6f4356a3
+      internalID: -1343935194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_8
+      rect:
+        serializedVersion: 2
+        x: 9473
+        y: 1705
+        width: 331
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d841d711d6b6bf4c9d4280868af81c2
+      internalID: -808531568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 328
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d4c7f7847ad234ea8d68adf5844344
+      internalID: 1994816798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 7
+        width: 547
+        height: 1171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f576d6d5a9a9545afde249e9fef81b
+      internalID: -423491604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_11
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 0
+        width: 551
+        height: 1213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de712e38a6cbac428eb502aa7e2d4aa
+      internalID: 131013942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_12
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 2
+        width: 535
+        height: 1214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2d432c8ce356d499cb4d38d550b7e6
+      internalID: 320653612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_13
+      rect:
+        serializedVersion: 2
+        x: 5143
+        y: 2
+        width: 379
+        height: 1214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7878860471425a1419213b272cf2036e
+      internalID: -1251125845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_14
+      rect:
+        serializedVersion: 2
+        x: 6299
+        y: 0
+        width: 508
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ac98dad7abf1342b1020ea713b66ef
+      internalID: -2135728553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_15
+      rect:
+        serializedVersion: 2
+        x: 7205
+        y: 7
+        width: 743
+        height: 1209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f063fa976df94b45ab565efe48dc812
+      internalID: -185430188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_16
+      rect:
+        serializedVersion: 2
+        x: 8366
+        y: 2
+        width: 632
+        height: 1171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6091036ddc7af284f8e389429f2b4405
+      internalID: -394086287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARAKTER JALAN (1)_17
+      rect:
+        serializedVersion: 2
+        x: 9536
+        y: 0
+        width: 285
+        height: 1206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9410bae8e7a0030499039d7a8fd7d01a
+      internalID: 339570214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KARAKTER JALAN (1)_0: -633626480
+      KARAKTER JALAN (1)_1: -753518433
+      KARAKTER JALAN (1)_10: -423491604
+      KARAKTER JALAN (1)_11: 131013942
+      KARAKTER JALAN (1)_12: 320653612
+      KARAKTER JALAN (1)_13: -1251125845
+      KARAKTER JALAN (1)_14: -2135728553
+      KARAKTER JALAN (1)_15: -185430188
+      KARAKTER JALAN (1)_16: -394086287
+      KARAKTER JALAN (1)_17: 339570214
+      KARAKTER JALAN (1)_2: 1214114600
+      KARAKTER JALAN (1)_3: 160329680
+      KARAKTER JALAN (1)_4: 2060559368
+      KARAKTER JALAN (1)_5: 1655829321
+      KARAKTER JALAN (1)_6: 134669783
+      KARAKTER JALAN (1)_7: -1343935194
+      KARAKTER JALAN (1)_8: -808531568
+      KARAKTER JALAN (1)_9: 1994816798
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

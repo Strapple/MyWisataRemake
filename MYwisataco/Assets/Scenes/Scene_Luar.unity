@@ -1518,11 +1518,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ec8ab82de63f746ad6de96f45de381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotID: POHON
-  itemName: Pohon
+  slotID: Luar_B
+  itemName: Warmindo
   price: 5000
   ratingBonus: 0.1
-  purchasedSprite: {fileID: 21300000, guid: 279e40135a619c84ead3525b09b82b99, type: 3}
+  purchasedSprite: {fileID: 21300000, guid: 47d5b040067a2844abc23c2faaf7dd48, type: 3}
   popupPanel: {fileID: 890665587}
   txtPopupTitle: {fileID: 129229870}
   txtPopupPrice: {fileID: 1971380803}
@@ -1564,7 +1564,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 20.18, y: 18}
+    oldSize: {x: 22.699999, y: 10.862305}
     newSize: {x: 20.18, y: 18}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1614,7 +1614,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6ab6d3434d6ea3e479e16ef4d2d96ce8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96058776980e5e14abc4410bc0cd27c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1634,8 +1634,8 @@ Transform:
   m_GameObject: {fileID: 246874758}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.14, y: -2.25, z: 0}
-  m_LocalScale: {x: 0.07857826, y: 0.07857826, z: 0.07857826}
+  m_LocalPosition: {x: 6.25, y: 0.98, z: 0}
+  m_LocalScale: {x: 0.23400372, y: 0.23400372, z: 0.23400372}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4258,11 +4258,18 @@ MonoBehaviour:
   kebersihan: 80
   slotLuarA_Dibeli: 0
   slotLuarB_Dibeli: 0
+  slotLuarA_Sprite: {fileID: 0}
+  slotLuarB_Sprite: {fileID: 0}
   slotDalam1_Dibeli: 0
   slotDalam2_Dibeli: 0
   slotDalam3_Dibeli: 0
   slotDalam4_Dibeli: 0
   slotDalam5_Dibeli: 0
+  slotDalam1_SpriteName: 
+  slotDalam2_SpriteName: 
+  slotDalam3_SpriteName: 
+  slotDalam4_SpriteName: 
+  slotDalam5_SpriteName: 
   toiletDibeli: 0
   warungDibeli: 0
   tongSampahDibeli: 0
@@ -6027,14 +6034,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1414231458}
+  m_Children: []
   m_Father: {fileID: 1443601944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34, y: 0}
-  m_SizeDelta: {x: 385.1691, y: 277.9522}
+  m_AnchoredPosition: {x: -19.306, y: 105.79108}
+  m_SizeDelta: {x: 591.18, y: 416.8604}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1298146590
 MonoBehaviour:
@@ -6093,14 +6099,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cf7b4c56e4469ef439f74f2dafbced10, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6385,17 +6391,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414231457}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1298146589}
+  m_Father: {fileID: 1443601944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 168}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -28, y: 211}
+  m_SizeDelta: {x: -1393.26, y: -629.5574}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1414231459
 MonoBehaviour:
@@ -6417,7 +6423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MASUK gedung
+  m_text: MASUK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eafb2e0b4e4b06c44ad858c6d044533b, type: 2}
   m_sharedMaterial: {fileID: -495222954723722527, guid: eafb2e0b4e4b06c44ad858c6d044533b, type: 2}
@@ -6444,8 +6450,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.2
-  m_fontSizeBase: 35.2
+  m_fontSize: 37.3
+  m_fontSizeBase: 37.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6528,6 +6534,7 @@ RectTransform:
   m_Children:
   - {fileID: 73759820}
   - {fileID: 938936556}
+  - {fileID: 1414231458}
   - {fileID: 1298146589}
   - {fileID: 1642709834}
   - {fileID: 890665588}
@@ -8743,8 +8750,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.13713774, g: 0.5731965, b: 0.7056604, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6530b3fcc65a6ce4cac68ed415c7bb73, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8763,8 +8770,8 @@ Transform:
   m_GameObject: {fileID: 1878845794}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0059, y: 0.021, z: 0}
-  m_LocalScale: {x: 17.748816, y: 9.8579, z: 1}
+  m_LocalPosition: {x: 0.0343, y: -0.0026, z: 0}
+  m_LocalScale: {x: 0.22311625, y: 0.22311625, z: 0.22311625}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -10038,11 +10045,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ec8ab82de63f746ad6de96f45de381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotID: BINTANG
-  itemName: bintang
+  slotID: Luar_A
+  itemName: Taman
   price: 3000
   ratingBonus: 0.1
-  purchasedSprite: {fileID: 21300000, guid: 606c331ecad75504db95d613c33280c7, type: 3}
+  purchasedSprite: {fileID: 21300000, guid: fe6d7286265aa3b4ca42d45488be0189, type: 3}
   popupPanel: {fileID: 1642709833}
   txtPopupTitle: {fileID: 1907394050}
   txtPopupPrice: {fileID: 1578646870}
@@ -10084,7 +10091,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 20.18, y: 18}
+    oldSize: {x: 22.699999, y: 10.862305}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10134,7 +10141,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6ab6d3434d6ea3e479e16ef4d2d96ce8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96058776980e5e14abc4410bc0cd27c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10154,8 +10161,8 @@ Transform:
   m_GameObject: {fileID: 2114230402}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.12, y: 1.5, z: 0}
-  m_LocalScale: {x: 0.071098894, y: 0.071098894, z: 0.071098894}
+  m_LocalPosition: {x: -6.3804, y: 0.98, z: 0}
+  m_LocalScale: {x: 0.22106369, y: 0.22106369, z: 0.22106369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

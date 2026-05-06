@@ -5,7 +5,7 @@ using TMPro;
 public class DecorationSlot_Luar : MonoBehaviour
 {
     [Header("Slot Settings")]
-    public string slotID = "Luar_A"; // "Luar_A" atau "Luar_B"
+    public string slotID = "Luar_A";
     public string itemName = "Papan Nama";
     public int price = 3000;
     public float ratingBonus = 0.1f;
@@ -27,21 +27,11 @@ public class DecorationSlot_Luar : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
 
-        // Cek apakah sudah dibeli sebelumnya
-        if (slotID == "Luar_A" && GameManager.Instance.slotLuarA_Dibeli)
-        {
-            SetPurchased();
-        }
-        else if (slotID == "Luar_B" && GameManager.Instance.slotLuarB_Dibeli)
-        {
-            SetPurchased();
-        }
+        LoadPurchaseState();
 
-        // Sembunyikan popup awal
         if (popupPanel != null)
             popupPanel.SetActive(false);
 
-        // Setup tombol popup
         if (btnYa != null)
             btnYa.onClick.AddListener(OnBeliClicked);
         if (btnTidak != null)
@@ -52,7 +42,6 @@ public class DecorationSlot_Luar : MonoBehaviour
     {
         if (!isPurchased && popupPanel != null)
         {
-            // Tampilkan popup
             popupPanel.SetActive(true);
             txtPopupTitle.text = $"Beli {itemName}?";
             txtPopupPrice.text = $"Harga: Rp {price:N0}\nBonus Rating: +{ratingBonus}";
@@ -61,16 +50,12 @@ public class DecorationSlot_Luar : MonoBehaviour
 
     void OnBeliClicked()
     {
+        if (GameManager.Instance == null) return;
+
         if (GameManager.Instance.KurangiUang(price))
         {
             GameManager.Instance.TambahRating(ratingBonus);
-
-            // Simpan status berdasarkan slot ID
-            if (slotID == "Luar_A")
-                GameManager.Instance.slotLuarA_Dibeli = true;
-            else if (slotID == "Luar_B")
-                GameManager.Instance.slotLuarB_Dibeli = true;
-
+            SavePurchaseState(purchasedSprite);
             SetPurchased();
         }
 
@@ -82,10 +67,63 @@ public class DecorationSlot_Luar : MonoBehaviour
         popupPanel.SetActive(false);
     }
 
+    void LoadPurchaseState()
+    {
+        if (GameManager.Instance == null) return;
+
+        bool purchased = false;
+        Sprite savedSprite = null;
+
+        if (slotID == "Luar_A")
+        {
+            purchased = GameManager.Instance.slotLuarA_Dibeli;
+            savedSprite = GameManager.Instance.slotLuarA_Sprite;
+        }
+        else if (slotID == "Luar_B")
+        {
+            purchased = GameManager.Instance.slotLuarB_Dibeli;
+            savedSprite = GameManager.Instance.slotLuarB_Sprite;
+        }
+
+        if (purchased)
+        {
+            if (savedSprite != null)
+                purchasedSprite = savedSprite;
+
+            if (purchasedSprite != null)
+                spriteRenderer.sprite = purchasedSprite;
+
+            isPurchased = true;
+            if (boxCollider != null)
+                boxCollider.enabled = false;
+
+            CoinSpawner spawner = GetComponent<CoinSpawner>();
+            if (spawner != null)
+                spawner.enabled = true;
+        }
+    }
+
+    void SavePurchaseState(Sprite spriteToSave)
+    {
+        if (GameManager.Instance == null) return;
+
+        if (slotID == "Luar_A")
+        {
+            GameManager.Instance.slotLuarA_Dibeli = true;
+            GameManager.Instance.slotLuarA_Sprite = spriteToSave;
+        }
+        else if (slotID == "Luar_B")
+        {
+            GameManager.Instance.slotLuarB_Dibeli = true;
+            GameManager.Instance.slotLuarB_Sprite = spriteToSave;
+        }
+    }
+
     public bool IsPurchased()
     {
         return isPurchased;
     }
+
     void SetPurchased()
     {
         isPurchased = true;
@@ -95,11 +133,8 @@ public class DecorationSlot_Luar : MonoBehaviour
         if (boxCollider != null)
             boxCollider.enabled = false;
 
-        // Aktifkan CoinSpawner
         CoinSpawner spawner = GetComponent<CoinSpawner>();
         if (spawner != null)
-        {
             spawner.enabled = true;
-        }
     }
 }

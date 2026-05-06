@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     // ========== STATUS SLOT LUAR (INTERAKTIF) ==========
     public bool slotLuarA_Dibeli = false;
     public bool slotLuarB_Dibeli = false;
+    public Sprite slotLuarA_Sprite = null;
+    public Sprite slotLuarB_Sprite = null;
 
     // ========== STATUS SLOT DALAM ==========
     public bool slotDalam1_Dibeli = false;
@@ -20,6 +22,13 @@ public class GameManager : MonoBehaviour
     public bool slotDalam3_Dibeli = false;
     public bool slotDalam4_Dibeli = false;
     public bool slotDalam5_Dibeli = false;
+
+    // ========== SPRITE SLOT DALAM (UNTUK LOAD) ==========
+    public string slotDalam1_SpriteName = "";
+    public string slotDalam2_SpriteName = "";
+    public string slotDalam3_SpriteName = "";
+    public string slotDalam4_SpriteName = "";
+    public string slotDalam5_SpriteName = "";
 
     // ========== STATUS BANGUNAN ==========
     public bool toiletDibeli = false;
