@@ -21,28 +21,22 @@ public class DecorationSlot_Dalam : MonoBehaviour
     public ItemOption option2;
     public ItemOption option3;
 
-    [Header("All Possible Sprites (untuk load)")]
-    public Sprite[] allSprites; // ⬅️ Drag semua sprite opsi ke sini
-
     [Header("UI Popup")]
     public GameObject popupPanel;
     public TextMeshProUGUI txtPopupTitle;
 
-    // Opsi 1
     public Image imgItem1;
     public TextMeshProUGUI txtName1;
     public TextMeshProUGUI txtPrice1;
     public TextMeshProUGUI txtBonus1;
     public Button btnBeli1;
 
-    // Opsi 2
     public Image imgItem2;
     public TextMeshProUGUI txtName2;
     public TextMeshProUGUI txtPrice2;
     public TextMeshProUGUI txtBonus2;
     public Button btnBeli2;
 
-    // Opsi 3
     public Image imgItem3;
     public TextMeshProUGUI txtName3;
     public TextMeshProUGUI txtPrice3;
@@ -65,15 +59,12 @@ public class DecorationSlot_Dalam : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
-
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
 
         LoadPurchaseState();
 
-        if (popupPanel != null)
-            popupPanel.SetActive(false);
-        if (interactHint != null)
-            interactHint.SetActive(false);
+        if (popupPanel != null) popupPanel.SetActive(false);
+        if (interactHint != null) interactHint.SetActive(false);
 
         if (btnBeli1 != null) btnBeli1.onClick.AddListener(() => OnBeliClicked(1));
         if (btnBeli2 != null) btnBeli2.onClick.AddListener(() => OnBeliClicked(2));
@@ -88,47 +79,32 @@ public class DecorationSlot_Dalam : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.position);
         playerInRange = distance <= interactionRange;
 
-        if (interactHint != null)
-        {
-            interactHint.SetActive(playerInRange);
-        }
+        if (interactHint != null) interactHint.SetActive(playerInRange);
 
         if (playerInRange && Input.GetKeyDown(KeyCode.E))
-        {
             ShowPopup();
-        }
     }
 
     void ShowPopup()
     {
         if (popupPanel == null) return;
-
-        SetupOpsiUI(option1, imgItem1, txtName1, txtPrice1, txtBonus1, btnBeli1);
-        SetupOpsiUI(option2, imgItem2, txtName2, txtPrice2, txtBonus2, btnBeli2);
-        SetupOpsiUI(option3, imgItem3, txtName3, txtPrice3, txtBonus3, btnBeli3);
-
+        SetupOpsiUI(option1, imgItem1, txtName1, txtPrice1, txtBonus1);
+        SetupOpsiUI(option2, imgItem2, txtName2, txtPrice2, txtBonus2);
+        SetupOpsiUI(option3, imgItem3, txtName3, txtPrice3, txtBonus3);
         popupPanel.SetActive(true);
     }
 
-    void SetupOpsiUI(ItemOption option, Image img, TextMeshProUGUI name, TextMeshProUGUI price, TextMeshProUGUI bonus, Button btn)
+    void SetupOpsiUI(ItemOption option, Image img, TextMeshProUGUI name, TextMeshProUGUI price, TextMeshProUGUI bonus)
     {
-        if (img != null && option.itemSprite != null)
-            img.sprite = option.itemSprite;
-
-        if (name != null)
-            name.text = option.itemName;
-
-        if (price != null)
-            price.text = $"Rp {option.price:N0}";
-
-        if (bonus != null)
-            bonus.text = $"+{option.ratingBonus} ⭐";
+        if (img != null && option.itemSprite != null) img.sprite = option.itemSprite;
+        if (name != null) name.text = option.itemName;
+        if (price != null) price.text = $"Rp {option.price:N0}";
+        if (bonus != null) bonus.text = $"+{option.ratingBonus} ⭐";
     }
 
     void OnBeliClicked(int opsiKe)
     {
         ItemOption selectedOption = null;
-
         switch (opsiKe)
         {
             case 1: selectedOption = option1; break;
@@ -136,26 +112,19 @@ public class DecorationSlot_Dalam : MonoBehaviour
             case 3: selectedOption = option3; break;
         }
 
-        if (selectedOption == null) return;
-        if (GameManager.Instance == null) return;
+        if (selectedOption == null || GameManager.Instance == null) return;
 
         if (GameManager.Instance.KurangiUang(selectedOption.price))
         {
             GameManager.Instance.TambahRating(selectedOption.ratingBonus);
+            SavePurchaseState(selectedOption.itemSprite, selectedOption.itemName);
 
-            // Simpan nama sprite yang dipilih
-            string spriteName = selectedOption.itemSprite != null ? selectedOption.itemSprite.name : "";
-            SavePurchaseState(spriteName);
-
-            // Update sprite langsung
             if (selectedOption.itemSprite != null)
                 spriteRenderer.sprite = selectedOption.itemSprite;
 
             isPurchased = true;
-            if (boxCollider != null)
-                boxCollider.enabled = false;
-            if (interactHint != null)
-                interactHint.SetActive(false);
+            if (boxCollider != null) boxCollider.enabled = false;
+            if (interactHint != null) interactHint.SetActive(false);
         }
 
         popupPanel.SetActive(false);
@@ -171,94 +140,58 @@ public class DecorationSlot_Dalam : MonoBehaviour
         if (GameManager.Instance == null) return;
 
         bool purchased = false;
-        string spriteName = "";
+        Sprite savedSprite = null;
 
         switch (slotID)
         {
-            case "Dalam_1":
-                purchased = GameManager.Instance.slotDalam1_Dibeli;
-                spriteName = GameManager.Instance.slotDalam1_SpriteName;
-                break;
-            case "Dalam_2":
-                purchased = GameManager.Instance.slotDalam2_Dibeli;
-                spriteName = GameManager.Instance.slotDalam2_SpriteName;
-                break;
-            case "Dalam_3":
-                purchased = GameManager.Instance.slotDalam3_Dibeli;
-                spriteName = GameManager.Instance.slotDalam3_SpriteName;
-                break;
-            case "Dalam_4":
-                purchased = GameManager.Instance.slotDalam4_Dibeli;
-                spriteName = GameManager.Instance.slotDalam4_SpriteName;
-                break;
-            case "Dalam_5":
-                purchased = GameManager.Instance.slotDalam5_Dibeli;
-                spriteName = GameManager.Instance.slotDalam5_SpriteName;
-                break;
+            case "Dalam_1": purchased = GameManager.Instance.slotDalam1_Dibeli; savedSprite = GameManager.Instance.slotDalam1_Sprite; break;
+            case "Dalam_2": purchased = GameManager.Instance.slotDalam2_Dibeli; savedSprite = GameManager.Instance.slotDalam2_Sprite; break;
+            case "Dalam_3": purchased = GameManager.Instance.slotDalam3_Dibeli; savedSprite = GameManager.Instance.slotDalam3_Sprite; break;
+            case "Dalam_4": purchased = GameManager.Instance.slotDalam4_Dibeli; savedSprite = GameManager.Instance.slotDalam4_Sprite; break;
+            case "Dalam_5": purchased = GameManager.Instance.slotDalam5_Dibeli; savedSprite = GameManager.Instance.slotDalam5_Sprite; break;
+            case "Dalam_6": purchased = GameManager.Instance.slotDalam6_Dibeli; savedSprite = GameManager.Instance.slotDalam6_Sprite; break;
+            case "Dalam_7": purchased = GameManager.Instance.slotDalam7_Dibeli; savedSprite = GameManager.Instance.slotDalam7_Sprite; break;
+            case "Dalam_8": purchased = GameManager.Instance.slotDalam8_Dibeli; savedSprite = GameManager.Instance.slotDalam8_Sprite; break;
+            case "Miniatur_1": purchased = GameManager.Instance.slotMiniatur1_Dibeli; savedSprite = GameManager.Instance.slotMiniatur1_Sprite; break;
+            case "Lukisan_1": purchased = GameManager.Instance.slotLukisan1_Dibeli; savedSprite = GameManager.Instance.slotLukisan1_Sprite; break;
+            case "Lukisan_2": purchased = GameManager.Instance.slotLukisan2_Dibeli; savedSprite = GameManager.Instance.slotLukisan2_Sprite; break;
+            case "Lukisan_3": purchased = GameManager.Instance.slotLukisan3_Dibeli; savedSprite = GameManager.Instance.slotLukisan3_Sprite; break;
+            case "Lukisan_4": purchased = GameManager.Instance.slotLukisan4_Dibeli; savedSprite = GameManager.Instance.slotLukisan4_Sprite; break;
+            case "Lukisan_5": purchased = GameManager.Instance.slotLukisan5_Dibeli; savedSprite = GameManager.Instance.slotLukisan5_Sprite; break;
+            case "Lukisan_6": purchased = GameManager.Instance.slotLukisan6_Dibeli; savedSprite = GameManager.Instance.slotLukisan6_Sprite; break;
         }
 
-        if (purchased)
+        if (purchased && savedSprite != null)
         {
-            // Cari sprite berdasarkan nama
-            Sprite savedSprite = FindSpriteByName(spriteName);
-
-            if (savedSprite != null)
-                spriteRenderer.sprite = savedSprite;
-
+            spriteRenderer.sprite = savedSprite;
             isPurchased = true;
-            if (boxCollider != null)
-                boxCollider.enabled = false;
-            if (interactHint != null)
-                interactHint.SetActive(false);
+            if (boxCollider != null) boxCollider.enabled = false;
+            if (interactHint != null) interactHint.SetActive(false);
         }
     }
 
-    void SavePurchaseState(string spriteName)
+    void SavePurchaseState(Sprite spriteToSave, string itemName)
     {
         if (GameManager.Instance == null) return;
 
         switch (slotID)
         {
-            case "Dalam_1":
-                GameManager.Instance.slotDalam1_Dibeli = true;
-                GameManager.Instance.slotDalam1_SpriteName = spriteName;
-                break;
-            case "Dalam_2":
-                GameManager.Instance.slotDalam2_Dibeli = true;
-                GameManager.Instance.slotDalam2_SpriteName = spriteName;
-                break;
-            case "Dalam_3":
-                GameManager.Instance.slotDalam3_Dibeli = true;
-                GameManager.Instance.slotDalam3_SpriteName = spriteName;
-                break;
-            case "Dalam_4":
-                GameManager.Instance.slotDalam4_Dibeli = true;
-                GameManager.Instance.slotDalam4_SpriteName = spriteName;
-                break;
-            case "Dalam_5":
-                GameManager.Instance.slotDalam5_Dibeli = true;
-                GameManager.Instance.slotDalam5_SpriteName = spriteName;
-                break;
+            case "Dalam_1": GameManager.Instance.slotDalam1_Dibeli = true; GameManager.Instance.slotDalam1_Sprite = spriteToSave; GameManager.Instance.slotDalam1_ItemName = itemName; break;
+            case "Dalam_2": GameManager.Instance.slotDalam2_Dibeli = true; GameManager.Instance.slotDalam2_Sprite = spriteToSave; GameManager.Instance.slotDalam2_ItemName = itemName; break;
+            case "Dalam_3": GameManager.Instance.slotDalam3_Dibeli = true; GameManager.Instance.slotDalam3_Sprite = spriteToSave; GameManager.Instance.slotDalam3_ItemName = itemName; break;
+            case "Dalam_4": GameManager.Instance.slotDalam4_Dibeli = true; GameManager.Instance.slotDalam4_Sprite = spriteToSave; GameManager.Instance.slotDalam4_ItemName = itemName; break;
+            case "Dalam_5": GameManager.Instance.slotDalam5_Dibeli = true; GameManager.Instance.slotDalam5_Sprite = spriteToSave; GameManager.Instance.slotDalam5_ItemName = itemName; break;
+            case "Dalam_6": GameManager.Instance.slotDalam6_Dibeli = true; GameManager.Instance.slotDalam6_Sprite = spriteToSave; GameManager.Instance.slotDalam6_ItemName = itemName; break;
+            case "Dalam_7": GameManager.Instance.slotDalam7_Dibeli = true; GameManager.Instance.slotDalam7_Sprite = spriteToSave; GameManager.Instance.slotDalam7_ItemName = itemName; break;
+            case "Dalam_8": GameManager.Instance.slotDalam8_Dibeli = true; GameManager.Instance.slotDalam8_Sprite = spriteToSave; GameManager.Instance.slotDalam8_ItemName = itemName; break;
+            case "Miniatur_1": GameManager.Instance.slotMiniatur1_Dibeli = true; GameManager.Instance.slotMiniatur1_Sprite = spriteToSave; GameManager.Instance.slotMiniatur1_ItemName = itemName; break;
+            case "Lukisan_1": GameManager.Instance.slotLukisan1_Dibeli = true; GameManager.Instance.slotLukisan1_Sprite = spriteToSave; GameManager.Instance.slotLukisan1_ItemName = itemName; break;
+            case "Lukisan_2": GameManager.Instance.slotLukisan2_Dibeli = true; GameManager.Instance.slotLukisan2_Sprite = spriteToSave; GameManager.Instance.slotLukisan2_ItemName = itemName; break;
+            case "Lukisan_3": GameManager.Instance.slotLukisan3_Dibeli = true; GameManager.Instance.slotLukisan3_Sprite = spriteToSave; GameManager.Instance.slotLukisan3_ItemName = itemName; break;
+            case "Lukisan_4": GameManager.Instance.slotLukisan4_Dibeli = true; GameManager.Instance.slotLukisan4_Sprite = spriteToSave; GameManager.Instance.slotLukisan4_ItemName = itemName; break;
+            case "Lukisan_5": GameManager.Instance.slotLukisan5_Dibeli = true; GameManager.Instance.slotLukisan5_Sprite = spriteToSave; GameManager.Instance.slotLukisan5_ItemName = itemName; break;
+            case "Lukisan_6": GameManager.Instance.slotLukisan6_Dibeli = true; GameManager.Instance.slotLukisan6_Sprite = spriteToSave; GameManager.Instance.slotLukisan6_ItemName = itemName; break;
         }
-    }
-
-    Sprite FindSpriteByName(string spriteName)
-    {
-        if (string.IsNullOrEmpty(spriteName)) return null;
-
-        // Cari di array allSprites
-        if (allSprites != null)
-        {
-            foreach (Sprite sprite in allSprites)
-            {
-                if (sprite != null && sprite.name == spriteName)
-                {
-                    return sprite;
-                }
-            }
-        }
-
-        return null;
     }
 
     void OnDrawGizmosSelected()

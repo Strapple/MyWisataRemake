@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,27 +10,70 @@ public class GameManager : MonoBehaviour
     public float rating = 2.0f;
     public float kebersihan = 80f;
 
-    // ========== STATUS SLOT LUAR (INTERAKTIF) ==========
+    // ========== STATUS SLOT LUAR (FIX) ==========
     public bool slotLuarA_Dibeli = false;
     public bool slotLuarB_Dibeli = false;
     public Sprite slotLuarA_Sprite = null;
     public Sprite slotLuarB_Sprite = null;
+    public string slotLuarA_ItemName = "";
+    public string slotLuarB_ItemName = "";
 
-    // ========== STATUS SLOT DALAM ==========
+    // ========== STATUS SLOT DALAM (3 OPSI) ==========
     public bool slotDalam1_Dibeli = false;
     public bool slotDalam2_Dibeli = false;
     public bool slotDalam3_Dibeli = false;
     public bool slotDalam4_Dibeli = false;
     public bool slotDalam5_Dibeli = false;
+    public bool slotDalam6_Dibeli = false;
+    public bool slotDalam7_Dibeli = false;
+    public bool slotDalam8_Dibeli = false;
 
-    // ========== SPRITE SLOT DALAM (UNTUK LOAD) ==========
-    public string slotDalam1_SpriteName = "";
-    public string slotDalam2_SpriteName = "";
-    public string slotDalam3_SpriteName = "";
-    public string slotDalam4_SpriteName = "";
-    public string slotDalam5_SpriteName = "";
+    public Sprite slotDalam1_Sprite = null;
+    public Sprite slotDalam2_Sprite = null;
+    public Sprite slotDalam3_Sprite = null;
+    public Sprite slotDalam4_Sprite = null;
+    public Sprite slotDalam5_Sprite = null;
+    public Sprite slotDalam6_Sprite = null;
+    public Sprite slotDalam7_Sprite = null;
+    public Sprite slotDalam8_Sprite = null;
 
-    // ========== STATUS BANGUNAN ==========
+    public string slotDalam1_ItemName = "";
+    public string slotDalam2_ItemName = "";
+    public string slotDalam3_ItemName = "";
+    public string slotDalam4_ItemName = "";
+    public string slotDalam5_ItemName = "";
+    public string slotDalam6_ItemName = "";
+    public string slotDalam7_ItemName = "";
+    public string slotDalam8_ItemName = "";
+
+    // ========== STATUS MINIATUR (3 OPSI) ==========
+    public bool slotMiniatur1_Dibeli = false;
+    public Sprite slotMiniatur1_Sprite = null;
+    public string slotMiniatur1_ItemName = "";
+
+    // ========== STATUS LUKISAN (3 OPSI) ==========
+    public bool slotLukisan1_Dibeli = false;
+    public bool slotLukisan2_Dibeli = false;
+    public bool slotLukisan3_Dibeli = false;
+    public bool slotLukisan4_Dibeli = false;
+    public bool slotLukisan5_Dibeli = false;
+    public bool slotLukisan6_Dibeli = false;
+
+    public Sprite slotLukisan1_Sprite = null;
+    public Sprite slotLukisan2_Sprite = null;
+    public Sprite slotLukisan3_Sprite = null;
+    public Sprite slotLukisan4_Sprite = null;
+    public Sprite slotLukisan5_Sprite = null;
+    public Sprite slotLukisan6_Sprite = null;
+
+    public string slotLukisan1_ItemName = "";
+    public string slotLukisan2_ItemName = "";
+    public string slotLukisan3_ItemName = "";
+    public string slotLukisan4_ItemName = "";
+    public string slotLukisan5_ItemName = "";
+    public string slotLukisan6_ItemName = "";
+
+    // ========== STATUS BANGUNAN (TOMBOL AKSI) ==========
     public bool toiletDibeli = false;
     public bool warungDibeli = false;
     public bool tongSampahDibeli = false;
@@ -54,7 +97,6 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        // Singleton Setup
         if (Instance == null)
         {
             Instance = this;
@@ -68,7 +110,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        // Update kebersihan setiap detik
         kebersihanUpdateTimer += Time.deltaTime;
         if (kebersihanUpdateTimer >= 1.0f)
         {
@@ -76,7 +117,6 @@ public class GameManager : MonoBehaviour
             UpdateKebersihan();
         }
 
-        // Update rating setiap 5 detik
         ratingUpdateTimer += Time.deltaTime;
         if (ratingUpdateTimer >= 5.0f)
         {
@@ -84,7 +124,6 @@ public class GameManager : MonoBehaviour
             UpdateRating();
         }
 
-        // Update max turis berdasarkan rating
         UpdateMaxTuris();
     }
 
@@ -93,29 +132,25 @@ public class GameManager : MonoBehaviour
         int turisAktif = FindObjectOfType<TurisSpawner>()?.GetTurisAktif() ?? 0;
         float pengurangan = turisAktif * KEBERSIHAN_TURUN_RATE * drainRateMultiplier;
         kebersihan = Mathf.Max(0, kebersihan - pengurangan);
-
         OnDataUpdated?.Invoke();
     }
 
     void UpdateRating()
     {
         if (kebersihan > 70f)
-        {
-            rating = Mathf.Min(3.0f, rating + RATING_NAIK_RATE);
-        }
+            rating = Mathf.Min(5.0f, rating + RATING_NAIK_RATE);
         else if (kebersihan < 30f)
-        {
             rating = Mathf.Max(0f, rating - RATING_TURUN_RATE);
-        }
-
         OnDataUpdated?.Invoke();
     }
 
     void UpdateMaxTuris()
     {
-        if (rating >= 3.0f) maxTuris = 8;
-        else if (rating >= 2.5f) maxTuris = 6;
-        else if (rating >= 2.0f) maxTuris = 4;
+        if (rating >= 5.0f) maxTuris = 8;
+        else if (rating >= 4.0f) maxTuris = 6;
+        else if (rating >= 3.0f) maxTuris = 5;
+        else if (rating >= 2.5f) maxTuris = 4;
+        else if (rating >= 2.0f) maxTuris = 3;
         else maxTuris = 2;
     }
 
@@ -140,7 +175,7 @@ public class GameManager : MonoBehaviour
 
     public void TambahRating(float jumlah)
     {
-        rating = Mathf.Min(3.0f, rating + jumlah);
+        rating = Mathf.Min(5.0f, rating + jumlah);
         OnDataUpdated?.Invoke();
     }
 

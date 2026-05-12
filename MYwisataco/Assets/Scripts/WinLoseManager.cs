@@ -65,7 +65,7 @@ public class WinLoseManager : MonoBehaviour
 
     void CheckWinCondition()
     {
-        if (GameManager.Instance.rating >= 3.0f)
+        if (GameManager.Instance.rating >= 5.0f)
         {
             if (!isWinning)
             {

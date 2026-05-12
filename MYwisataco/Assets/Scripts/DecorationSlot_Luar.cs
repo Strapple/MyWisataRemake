@@ -111,11 +111,13 @@ public class DecorationSlot_Luar : MonoBehaviour
         {
             GameManager.Instance.slotLuarA_Dibeli = true;
             GameManager.Instance.slotLuarA_Sprite = spriteToSave;
+            GameManager.Instance.slotLuarA_ItemName = itemName;
         }
         else if (slotID == "Luar_B")
         {
             GameManager.Instance.slotLuarB_Dibeli = true;
             GameManager.Instance.slotLuarB_Sprite = spriteToSave;
+            GameManager.Instance.slotLuarB_ItemName = itemName;
         }
     }
 
