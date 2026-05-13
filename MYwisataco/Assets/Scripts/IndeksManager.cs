@@ -130,8 +130,8 @@ public class IndeksManager : MonoBehaviour
     {
         switch (slotID)
         {
-            case "Luar_A": return GameManager.Instance.slotLuarA_Dibeli;
-            case "Luar_B": return GameManager.Instance.slotLuarB_Dibeli;
+            case "Awal_A": return GameManager.Instance.slotAwalA_Dibeli;
+            case "Awal_B": return GameManager.Instance.slotAwalB_Dibeli;
             case "Dalam_1": return GameManager.Instance.slotDalam1_Dibeli;
             case "Dalam_2": return GameManager.Instance.slotDalam2_Dibeli;
             case "Dalam_3": return GameManager.Instance.slotDalam3_Dibeli;
@@ -156,8 +156,8 @@ public class IndeksManager : MonoBehaviour
         if (GameManager.Instance == null) return "";
         switch (slotID)
         {
-            case "Luar_A": return GameManager.Instance.slotLuarA_ItemName;
-            case "Luar_B": return GameManager.Instance.slotLuarB_ItemName;
+            case "Awal_A": return GameManager.Instance.slotAwalA_ItemName;
+            case "Awal_B": return GameManager.Instance.slotAwalB_ItemName;
             case "Dalam_1": return GameManager.Instance.slotDalam1_ItemName;
             case "Dalam_2": return GameManager.Instance.slotDalam2_ItemName;
             case "Dalam_3": return GameManager.Instance.slotDalam3_ItemName;

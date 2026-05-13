@@ -1211,10 +1211,8 @@ MonoBehaviour:
   turisPrefab: {fileID: 8056265860111903744, guid: ff98668f0feed8a44b090791d2872107, type: 3}
   spawnPoints:
   - {fileID: 595908583}
-  - {fileID: 1533423094}
   waypoints:
   - {fileID: 788188184}
-  - {fileID: 407833718}
   spawnInterval: 2
 --- !u!4 &200177090
 Transform:
@@ -1652,7 +1650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ec8ab82de63f746ad6de96f45de381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotID: Luar_B
+  slotID: Awal_B
   itemName: Warmindo
   price: 5000
   ratingBonus: 0.1
@@ -2594,7 +2592,7 @@ MonoBehaviour:
     kategori: Bangunan Umum
     deskripsi: 'Taman adalah area terbuka, baik alami maupun buatan, yang dirancang
       untuk keindahan, rekreasi, dan pelestarian lingkungan. '
-    slotID: Luar_A
+    slotID: Awal_A
     opsiIndex: 1
   - itemName: Warmindo
     itemSprite: {fileID: 21300000, guid: 47d5b040067a2844abc23c2faaf7dd48, type: 3}
@@ -2605,7 +2603,7 @@ MonoBehaviour:
     deskripsi: Warmindo adalah singkatan dari "Warung Makan Indomie", sebuah tempat
       makan sederhana atau warung kaki lima yang menyajikan berbagai menu olahan
       mie instan, utamanya Indomie.
-    slotID: Luar_B
+    slotID: Awal_B
     opsiIndex: 1
   - itemName: Lukisan Owi
     itemSprite: {fileID: 21300000, guid: f69a9ac93ccc83948a7289d41831fc5c, type: 3}
@@ -3221,7 +3219,7 @@ Transform:
   m_GameObject: {fileID: 407833717}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.29, y: -1.8200002, z: -9.952818}
+  m_LocalPosition: {x: -8.29, y: -2, z: -9.952818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4025,7 +4023,7 @@ Transform:
   m_GameObject: {fileID: 595908582}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.48, y: -1.98, z: -9.952818}
+  m_LocalPosition: {x: -9.48, y: -1, z: -9.952818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4547,7 +4545,7 @@ Transform:
   m_GameObject: {fileID: 788188183}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.33, y: -1.82, z: -9.952818}
+  m_LocalPosition: {x: 9.64, y: -1, z: -9.952818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5571,12 +5569,12 @@ MonoBehaviour:
   uang: 100000
   rating: 2
   kebersihan: 80
-  slotLuarA_Dibeli: 0
-  slotLuarB_Dibeli: 0
-  slotLuarA_Sprite: {fileID: 0}
-  slotLuarB_Sprite: {fileID: 0}
-  slotLuarA_ItemName: 
-  slotLuarB_ItemName: 
+  slotAwalA_Dibeli: 0
+  slotAwalB_Dibeli: 0
+  slotAwalA_Sprite: {fileID: 0}
+  slotAwalB_Sprite: {fileID: 0}
+  slotAwalA_ItemName: 
+  slotAwalB_ItemName: 
   slotDalam1_Dibeli: 0
   slotDalam2_Dibeli: 0
   slotDalam3_Dibeli: 0
@@ -9022,7 +9020,7 @@ Transform:
   m_GameObject: {fileID: 1533423093}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.470001, y: -1.98, z: -9.952818}
+  m_LocalPosition: {x: 9.470001, y: -2, z: -9.952818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11189,140 +11187,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1885380217
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1885380218}
-  - component: {fileID: 1885380220}
-  - component: {fileID: 1885380219}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1885380218
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885380217}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2087838187}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1885380219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885380217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Index
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 41.6
-  m_fontSizeBase: 41.6
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1885380220
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885380217}
-  m_CullTransparentMesh: 1
 --- !u!1 &1907394047
 GameObject:
   m_ObjectHideFlags: 0
@@ -12665,14 +12529,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1885380218}
+  m_Children: []
   m_Father: {fileID: 1443601944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -870, y: 264}
-  m_SizeDelta: {x: 144.5299, y: 115.085}
+  m_AnchoredPosition: {x: -888.4854, y: 256.45}
+  m_SizeDelta: {x: 108.2228, y: 108.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2087838188
 MonoBehaviour:
@@ -12750,8 +12613,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8e6f0eea2455b4546ab29d240016f8ba, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12800,7 +12663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ec8ab82de63f746ad6de96f45de381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotID: Luar_A
+  slotID: Awal_A
   itemName: Taman
   price: 3000
   ratingBonus: 0.1

@@ -11,12 +11,12 @@ public class GameManager : MonoBehaviour
     public float kebersihan = 80f;
 
     // ========== STATUS SLOT LUAR (FIX) ==========
-    public bool slotLuarA_Dibeli = false;
-    public bool slotLuarB_Dibeli = false;
-    public Sprite slotLuarA_Sprite = null;
-    public Sprite slotLuarB_Sprite = null;
-    public string slotLuarA_ItemName = "";
-    public string slotLuarB_ItemName = "";
+    public bool slotAwalA_Dibeli = false;
+    public bool slotAwalB_Dibeli = false;
+    public Sprite slotAwalA_Sprite = null;
+    public Sprite slotAwalB_Sprite = null;
+    public string slotAwalA_ItemName = "";
+    public string slotAwalB_ItemName = "";
 
     // ========== STATUS SLOT DALAM (3 OPSI) ==========
     public bool slotDalam1_Dibeli = false;

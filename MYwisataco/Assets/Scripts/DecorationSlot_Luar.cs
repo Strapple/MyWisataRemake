@@ -5,8 +5,8 @@ using TMPro;
 public class DecorationSlot_Luar : MonoBehaviour
 {
     [Header("Slot Settings")]
-    public string slotID = "Luar_A";
-    public string itemName = "Papan Nama";
+    public string slotID = "Awal_A";
+    public string itemName = "Taman Wisata";
     public int price = 3000;
     public float ratingBonus = 0.1f;
     public Sprite purchasedSprite;
@@ -74,15 +74,15 @@ public class DecorationSlot_Luar : MonoBehaviour
         bool purchased = false;
         Sprite savedSprite = null;
 
-        if (slotID == "Luar_A")
+        if (slotID == "Awal_A")
         {
-            purchased = GameManager.Instance.slotLuarA_Dibeli;
-            savedSprite = GameManager.Instance.slotLuarA_Sprite;
+            purchased = GameManager.Instance.slotAwalA_Dibeli;
+            savedSprite = GameManager.Instance.slotAwalA_Sprite;
         }
-        else if (slotID == "Luar_B")
+        else if (slotID == "Awal_B")
         {
-            purchased = GameManager.Instance.slotLuarB_Dibeli;
-            savedSprite = GameManager.Instance.slotLuarB_Sprite;
+            purchased = GameManager.Instance.slotAwalB_Dibeli;
+            savedSprite = GameManager.Instance.slotAwalB_Sprite;
         }
 
         if (purchased)
@@ -107,17 +107,17 @@ public class DecorationSlot_Luar : MonoBehaviour
     {
         if (GameManager.Instance == null) return;
 
-        if (slotID == "Luar_A")
+        if (slotID == "Awal_A")
         {
-            GameManager.Instance.slotLuarA_Dibeli = true;
-            GameManager.Instance.slotLuarA_Sprite = spriteToSave;
-            GameManager.Instance.slotLuarA_ItemName = itemName;
+            GameManager.Instance.slotAwalA_Dibeli = true;
+            GameManager.Instance.slotAwalA_Sprite = spriteToSave;
+            GameManager.Instance.slotAwalA_ItemName = itemName;
         }
-        else if (slotID == "Luar_B")
+        else if (slotID == "Awal_B")
         {
-            GameManager.Instance.slotLuarB_Dibeli = true;
-            GameManager.Instance.slotLuarB_Sprite = spriteToSave;
-            GameManager.Instance.slotLuarB_ItemName = itemName;
+            GameManager.Instance.slotAwalB_Dibeli = true;
+            GameManager.Instance.slotAwalB_Sprite = spriteToSave;
+            GameManager.Instance.slotAwalB_ItemName = itemName;
         }
     }
 
