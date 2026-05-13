@@ -4100,7 +4100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 220}
+  m_AnchoredPosition: {x: 0, y: 257}
   m_SizeDelta: {x: 212.27, y: 212.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &157804993
@@ -9789,7 +9789,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -89.7218, y: 0, z: -260.69214, w: 0}
+  m_margin: {x: -89.7218, y: 0, z: -576.479, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9819,7 +9819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -99, y: -81}
+  m_AnchoredPosition: {x: -204, y: -52}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &324898068
@@ -9887,8 +9887,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.8
-  m_fontSizeBase: 29.8
+  m_fontSize: 25.25
+  m_fontSizeBase: 25.25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9923,7 +9923,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -361.70477, y: -16.274292, z: -348.56836, w: -109.850555}
+  m_margin: {x: -361.70477, y: -16.274292, z: -348.56836, w: -92.40378}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9953,7 +9953,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -228}
+  m_AnchoredPosition: {x: 0, y: -216}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &328162518
@@ -12126,7 +12126,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -89.7218, y: 0, z: -308.5879, w: 0}
+  m_margin: {x: -89.7218, y: 0, z: -566.80054, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -12156,7 +12156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -99, y: 75}
+  m_AnchoredPosition: {x: -204, y: 104}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &392511494
@@ -22488,6 +22488,337 @@ MonoBehaviour:
     deskripsi: Sebuah lukisan pesawat terbang.
     slotID: Lukisan_6
     opsiIndex: 3
+  - itemName: Candi Borobudur
+    itemSprite: {fileID: 21300000, guid: 8551cc75f8669944db1fe0bdc68cf877, type: 3}
+    asalDaerah: Yogyakarta
+    tahunDibuat: sekitar tahun 800-an M
+    pembuat: Wangsa Syailendra
+    kategori: Miniatur
+    deskripsi: Candi Borobudur adalah candi Buddha terbesar di dunia yang terletak
+      di Magelang, Jawa Tengah, dibangun pada abad ke-8 dan ke-9 (sekitar tahun 800-an
+      M) oleh Wangsa Syailendra. Berbentuk punden berundak, candi ini memiliki 10
+      tingkat yang melambangkan filosofi tingkat kesadaran manusia menuju nirwana,
+      dihiasi ribuan panel relief dan stupa yang megah.
+    slotID: Miniatur_1
+    opsiIndex: 1
+  - itemName: Patung Pancoran
+    itemSprite: {fileID: 21300000, guid: 155654db3dfaaf94486452d318bf343d, type: 3}
+    asalDaerah: Jakarta Selatan
+    tahunDibuat: sekitar tahun 800-an M
+    pembuat: Edhi SUnarso
+    kategori: Miniatur
+    deskripsi: monumen perunggu setinggi 11 meter (total 38 meter dengan landasan)
+      yang digagas Presiden Soekarno pada 1964-1965
+    slotID: Miniatur_1
+    opsiIndex: 2
+  - itemName: Istana Presiden
+    itemSprite: {fileID: 21300000, guid: 062476ab6d531cf4da01ba40b5d7dc8f, type: 3}
+    asalDaerah: Jakarta
+    tahunDibuat: 1796
+    pembuat: Jacob Andries van Braam
+    kategori: Miniatur
+    deskripsi: Istana Presiden Indonesia adalah kediaman resmi dan kantor kerja Presiden,
+      berfungsi sebagai pusat kegiatan kenegaraan, perjamuan, serta simbol kedaulatan
+      negara. Terdapat tujuh kompleks istana yang tersebar, didominasi gaya arsitektur
+      kolonial Eropa-Indis, dengan interior bernuansa seni rupa bernilai tinggi.
+    slotID: Miniatur_1
+    opsiIndex: 3
+  - itemName: Gambus
+    itemSprite: {fileID: 21300000, guid: e86f24c5614419549be897cc180f50c0, type: 3}
+    asalDaerah: Timur Tengah
+    tahunDibuat: 1930
+    pembuat: Syech Albar (Perintis)
+    kategori: Dekorasi Musik
+    deskripsi: Gambus adalah alat musik petik tradisional yang berasal dari Timur
+      Tengah (Arab) dan berkembang pesat di wilayah Melayu, termasuk Indonesia, sebagai
+      hasil akulturasi budaya
+    slotID: Dalam_1
+    opsiIndex: 1
+  - itemName: Piano
+    itemSprite: {fileID: 21300000, guid: f06cb5134b4332f4fbbcbc370a5c720f, type: 3}
+    asalDaerah: Italia
+    tahunDibuat: 1700
+    pembuat: Bartolomeo Cristofori
+    kategori: Dekorasi Musik
+    deskripsi: Piano adalah alat musik tuts (keyboard) yang menghasilkan suara dengan
+      cara menekan tuts-tuts yang terhubung ke palu (hammer) kecil untuk memukul
+      senar kawat di dalamnya. Instrumen ini dikategorikan sebagai alat musik chordophone
+      (sumber bunyi senar) sekaligus perkusi.
+    slotID: Dalam_1
+    opsiIndex: 2
+  - itemName: Gitar
+    itemSprite: {fileID: 21300000, guid: 05a06bd5267fea7489e5a916ebc8c2ed, type: 3}
+    asalDaerah: Spanyol
+    tahunDibuat: 1500 (abad ke 16)
+    pembuat: Luthier (Pengrajin Gitar)
+    kategori: Dekorasi Musik
+    deskripsi: "Gitar adalah alat musik berdawai yang dimainkan dengan cara dipetik,
+      umumnya menggunakan jari atau plektrum. Instrumen ini memiliki bagian tubuh
+      pokok (bodi) dengan leher (neck) padat tempat senar\u2014biasanya berjumlah
+      enam\u2014dibentangkan di atas fretboard. Terbuat dari kayu, nilon, atau baja,
+      gitar digunakan sebagai alat musik pengiring maupun melodi"
+    slotID: Dalam_1
+    opsiIndex: 3
+  - itemName: Gambus
+    itemSprite: {fileID: 21300000, guid: e86f24c5614419549be897cc180f50c0, type: 3}
+    asalDaerah: Timur Tengah
+    tahunDibuat: 1930
+    pembuat: Syech Albar (Perintis)
+    kategori: Dekorasi Musik
+    deskripsi: Gambus adalah alat musik petik tradisional yang berasal dari Timur
+      Tengah (Arab) dan berkembang pesat di wilayah Melayu, termasuk Indonesia, sebagai
+      hasil akulturasi budaya
+    slotID: Dalam_2
+    opsiIndex: 1
+  - itemName: Piano
+    itemSprite: {fileID: 21300000, guid: f06cb5134b4332f4fbbcbc370a5c720f, type: 3}
+    asalDaerah: Italia
+    tahunDibuat: 1700
+    pembuat: Bartolomeo Cristofori
+    kategori: Dekorasi Musik
+    deskripsi: Piano adalah alat musik tuts (keyboard) yang menghasilkan suara dengan
+      cara menekan tuts-tuts yang terhubung ke palu (hammer) kecil untuk memukul
+      senar kawat di dalamnya. Instrumen ini dikategorikan sebagai alat musik chordophone
+      (sumber bunyi senar) sekaligus perkusi.
+    slotID: Dalam_2
+    opsiIndex: 2
+  - itemName: Gitar
+    itemSprite: {fileID: 21300000, guid: 05a06bd5267fea7489e5a916ebc8c2ed, type: 3}
+    asalDaerah: Spanyol
+    tahunDibuat: 1500 (abad ke 16)
+    pembuat: Luthier (Pengrajin Gitar)
+    kategori: Dekorasi Musik
+    deskripsi: "Gitar adalah alat musik berdawai yang dimainkan dengan cara dipetik,
+      umumnya menggunakan jari atau plektrum. Instrumen ini memiliki bagian tubuh
+      pokok (bodi) dengan leher (neck) padat tempat senar\u2014biasanya berjumlah
+      enam\u2014dibentangkan di atas fretboard. Terbuat dari kayu, nilon, atau baja,
+      gitar digunakan sebagai alat musik pengiring maupun melodi"
+    slotID: Dalam_2
+    opsiIndex: 3
+  - itemName: Gong
+    itemSprite: {fileID: 21300000, guid: c71a9cb712b88774e8518b1304f637df, type: 3}
+    asalDaerah: Asia Tenggara dan Timur
+    tahunDibuat: Sebelum 2000 SM
+    pembuat: Pande Gong (Pengrajin logam)
+    kategori: Dekorasi Musik
+    deskripsi: Gong adalah alat musik perkusi (pukul) tradisional yang terbuat dari
+      logam (perunggu atau kuningan), berbentuk bulat, pipih, atau mangkuk dengan
+      tonjolan (pencu) di tengahnya. Berasal dari Asia Tenggara, alat ini menghasilkan
+      suara dalam dan bergetar saat dipukul dengan pemukul khusus, berfungsi dalam
+      gamelan, upacara adat, dan simbol spiritual.
+    slotID: Dalam_3
+    opsiIndex: 1
+  - itemName: Gambus
+    itemSprite: {fileID: 21300000, guid: e86f24c5614419549be897cc180f50c0, type: 3}
+    asalDaerah: Timur Tengah
+    tahunDibuat: 1930
+    pembuat: Syech Albar (Perintis)
+    kategori: Dekorasi Musik
+    deskripsi: Gambus adalah alat musik petik tradisional yang berasal dari Timur
+      Tengah (Arab) dan berkembang pesat di wilayah Melayu, termasuk Indonesia, sebagai
+      hasil akulturasi budaya
+    slotID: Dalam_3
+    opsiIndex: 1
+  - itemName: Gamelan
+    itemSprite: {fileID: 21300000, guid: 9fe0a3d2601fb90439b85034d2315c56, type: 3}
+    asalDaerah: Jawa
+    tahunDibuat: Saka 167 (230 Masehi
+    pembuat: Sang Hyang Guru
+    kategori: Dekorasi Musik
+    deskripsi: Gamelan adalah ansambel musik tradisional Indonesia yang berasal dari
+      Jawa, Bali, dan Lombok, terdiri dari perpaduan berbagai alat musik yang didominasi
+      logam (perunggu/kuningan) dan dimainkan secara dipukul atau ditabuh. Alat musik
+      ini menciptakan harmoni melalui tangga nada pentatonis (slendro dan pelog)
+      yang khas untuk mengiringi wayang, tari, maupun upacara adat.
+    slotID: Dalam_3
+    opsiIndex: 3
+  - itemName: Gong
+    itemSprite: {fileID: 21300000, guid: c71a9cb712b88774e8518b1304f637df, type: 3}
+    asalDaerah: Asia Tenggara dan Timur
+    tahunDibuat: Sebelum 2000 SM
+    pembuat: Pande Gong (Pengrajin logam)
+    kategori: Dekorasi Musik
+    deskripsi: Gong adalah alat musik perkusi (pukul) tradisional yang terbuat dari
+      logam (perunggu atau kuningan), berbentuk bulat, pipih, atau mangkuk dengan
+      tonjolan (pencu) di tengahnya. Berasal dari Asia Tenggara, alat ini menghasilkan
+      suara dalam dan bergetar saat dipukul dengan pemukul khusus, berfungsi dalam
+      gamelan, upacara adat, dan simbol spiritual.
+    slotID: Dalam_4
+    opsiIndex: 1
+  - itemName: Gitar
+    itemSprite: {fileID: 21300000, guid: 05a06bd5267fea7489e5a916ebc8c2ed, type: 3}
+    asalDaerah: Spanyol
+    tahunDibuat: 1500 (abad ke 16)
+    pembuat: Luthier (Pengrajin Gitar)
+    kategori: Dekorasi Musik
+    deskripsi: "Gitar adalah alat musik berdawai yang dimainkan dengan cara dipetik,
+      umumnya menggunakan jari atau plektrum. Instrumen ini memiliki bagian tubuh
+      pokok (bodi) dengan leher (neck) padat tempat senar\u2014biasanya berjumlah
+      enam\u2014dibentangkan di atas fretboard. Terbuat dari kayu, nilon, atau baja,
+      gitar digunakan sebagai alat musik pengiring maupun melodi"
+    slotID: Dalam_4
+    opsiIndex: 2
+  - itemName: Gamelan
+    itemSprite: {fileID: 21300000, guid: 9fe0a3d2601fb90439b85034d2315c56, type: 3}
+    asalDaerah: Jawa
+    tahunDibuat: Saka 167 (230 Masehi
+    pembuat: Sang Hyang Guru
+    kategori: Dekorasi Musik
+    deskripsi: Gamelan adalah ansambel musik tradisional Indonesia yang berasal dari
+      Jawa, Bali, dan Lombok, terdiri dari perpaduan berbagai alat musik yang didominasi
+      logam (perunggu/kuningan) dan dimainkan secara dipukul atau ditabuh. Alat musik
+      ini menciptakan harmoni melalui tangga nada pentatonis (slendro dan pelog)
+      yang khas untuk mengiringi wayang, tari, maupun upacara adat.
+    slotID: Dalam_4
+    opsiIndex: 3
+  - itemName: Gitar
+    itemSprite: {fileID: 21300000, guid: 05a06bd5267fea7489e5a916ebc8c2ed, type: 3}
+    asalDaerah: Spanyol
+    tahunDibuat: 1500 (abad ke 16)
+    pembuat: Luthier (Pengrajin Gitar)
+    kategori: Dekorasi Musik
+    deskripsi: "Gitar adalah alat musik berdawai yang dimainkan dengan cara dipetik,
+      umumnya menggunakan jari atau plektrum. Instrumen ini memiliki bagian tubuh
+      pokok (bodi) dengan leher (neck) padat tempat senar\u2014biasanya berjumlah
+      enam\u2014dibentangkan di atas fretboard. Terbuat dari kayu, nilon, atau baja,
+      gitar digunakan sebagai alat musik pengiring maupun melodi"
+    slotID: Dalam_5
+    opsiIndex: 1
+  - itemName: Gong
+    itemSprite: {fileID: 21300000, guid: c71a9cb712b88774e8518b1304f637df, type: 3}
+    asalDaerah: Asia Tenggara dan Timur
+    tahunDibuat: Sebelum 2000 SM
+    pembuat: Pande Gong (Pengrajin logam)
+    kategori: Dekorasi Musik
+    deskripsi: Gong adalah alat musik perkusi (pukul) tradisional yang terbuat dari
+      logam (perunggu atau kuningan), berbentuk bulat, pipih, atau mangkuk dengan
+      tonjolan (pencu) di tengahnya. Berasal dari Asia Tenggara, alat ini menghasilkan
+      suara dalam dan bergetar saat dipukul dengan pemukul khusus, berfungsi dalam
+      gamelan, upacara adat, dan simbol spiritual.
+    slotID: Dalam_5
+    opsiIndex: 2
+  - itemName: Gamelan
+    itemSprite: {fileID: 21300000, guid: 9fe0a3d2601fb90439b85034d2315c56, type: 3}
+    asalDaerah: Jawa
+    tahunDibuat: Saka 167 (230 Masehi
+    pembuat: Sang Hyang Guru
+    kategori: Dekorasi Musik
+    deskripsi: Gamelan adalah ansambel musik tradisional Indonesia yang berasal dari
+      Jawa, Bali, dan Lombok, terdiri dari perpaduan berbagai alat musik yang didominasi
+      logam (perunggu/kuningan) dan dimainkan secara dipukul atau ditabuh. Alat musik
+      ini menciptakan harmoni melalui tangga nada pentatonis (slendro dan pelog)
+      yang khas untuk mengiringi wayang, tari, maupun upacara adat.
+    slotID: Dalam_5
+    opsiIndex: 3
+  - itemName: Gamelan
+    itemSprite: {fileID: 21300000, guid: 9fe0a3d2601fb90439b85034d2315c56, type: 3}
+    asalDaerah: Jawa
+    tahunDibuat: Saka 167 (230 Masehi
+    pembuat: Sang Hyang Guru
+    kategori: Dekorasi Musik
+    deskripsi: Gamelan adalah ansambel musik tradisional Indonesia yang berasal dari
+      Jawa, Bali, dan Lombok, terdiri dari perpaduan berbagai alat musik yang didominasi
+      logam (perunggu/kuningan) dan dimainkan secara dipukul atau ditabuh. Alat musik
+      ini menciptakan harmoni melalui tangga nada pentatonis (slendro dan pelog)
+      yang khas untuk mengiringi wayang, tari, maupun upacara adat.
+    slotID: Dalam_6
+    opsiIndex: 1
+  - itemName: Gambus
+    itemSprite: {fileID: 21300000, guid: e86f24c5614419549be897cc180f50c0, type: 3}
+    asalDaerah: Timur Tengah
+    tahunDibuat: 1930
+    pembuat: Syech Albar (Perintis)
+    kategori: Dekorasi Musik
+    deskripsi: Gambus adalah alat musik petik tradisional yang berasal dari Timur
+      Tengah (Arab) dan berkembang pesat di wilayah Melayu, termasuk Indonesia, sebagai
+      hasil akulturasi budaya
+    slotID: Dalam_6
+    opsiIndex: 2
+  - itemName: Piano
+    itemSprite: {fileID: 21300000, guid: f06cb5134b4332f4fbbcbc370a5c720f, type: 3}
+    asalDaerah: Italia
+    tahunDibuat: 1700
+    pembuat: Bartolomeo Cristofori
+    kategori: Dekorasi Musik
+    deskripsi: Piano adalah alat musik tuts (keyboard) yang menghasilkan suara dengan
+      cara menekan tuts-tuts yang terhubung ke palu (hammer) kecil untuk memukul
+      senar kawat di dalamnya. Instrumen ini dikategorikan sebagai alat musik chordophone
+      (sumber bunyi senar) sekaligus perkusi.
+    slotID: Dalam_6
+    opsiIndex: 3
+  - itemName: Gambus
+    itemSprite: {fileID: 21300000, guid: e86f24c5614419549be897cc180f50c0, type: 3}
+    asalDaerah: Timur Tengah
+    tahunDibuat: 1930
+    pembuat: Syech Albar (Perintis)
+    kategori: Dekorasi Musik
+    deskripsi: Gambus adalah alat musik petik tradisional yang berasal dari Timur
+      Tengah (Arab) dan berkembang pesat di wilayah Melayu, termasuk Indonesia, sebagai
+      hasil akulturasi budaya
+    slotID: Dalam_7
+    opsiIndex: 1
+  - itemName: Piano
+    itemSprite: {fileID: 21300000, guid: f06cb5134b4332f4fbbcbc370a5c720f, type: 3}
+    asalDaerah: Italia
+    tahunDibuat: 1700
+    pembuat: Bartolomeo Cristofori
+    kategori: Dekorasi Musik
+    deskripsi: Piano adalah alat musik tuts (keyboard) yang menghasilkan suara dengan
+      cara menekan tuts-tuts yang terhubung ke palu (hammer) kecil untuk memukul
+      senar kawat di dalamnya. Instrumen ini dikategorikan sebagai alat musik chordophone
+      (sumber bunyi senar) sekaligus perkusi.
+    slotID: Dalam_7
+    opsiIndex: 2
+  - itemName: Gong
+    itemSprite: {fileID: 21300000, guid: c71a9cb712b88774e8518b1304f637df, type: 3}
+    asalDaerah: Asia Tenggara dan Timur
+    tahunDibuat: Sebelum 2000 SM
+    pembuat: Pande Gong (Pengrajin logam)
+    kategori: Dekorasi Musik
+    deskripsi: Gong adalah alat musik perkusi (pukul) tradisional yang terbuat dari
+      logam (perunggu atau kuningan), berbentuk bulat, pipih, atau mangkuk dengan
+      tonjolan (pencu) di tengahnya. Berasal dari Asia Tenggara, alat ini menghasilkan
+      suara dalam dan bergetar saat dipukul dengan pemukul khusus, berfungsi dalam
+      gamelan, upacara adat, dan simbol spiritual.
+    slotID: Dalam_7
+    opsiIndex: 3
+  - itemName: Gamelan
+    itemSprite: {fileID: 21300000, guid: 9fe0a3d2601fb90439b85034d2315c56, type: 3}
+    asalDaerah: Jawa
+    tahunDibuat: Saka 167 (230 Masehi
+    pembuat: Sang Hyang Guru
+    kategori: Dekorasi Musik
+    deskripsi: Gamelan adalah ansambel musik tradisional Indonesia yang berasal dari
+      Jawa, Bali, dan Lombok, terdiri dari perpaduan berbagai alat musik yang didominasi
+      logam (perunggu/kuningan) dan dimainkan secara dipukul atau ditabuh. Alat musik
+      ini menciptakan harmoni melalui tangga nada pentatonis (slendro dan pelog)
+      yang khas untuk mengiringi wayang, tari, maupun upacara adat.
+    slotID: Dalam_8
+    opsiIndex: 1
+  - itemName: Gambus
+    itemSprite: {fileID: 21300000, guid: e86f24c5614419549be897cc180f50c0, type: 3}
+    asalDaerah: Timur Tengah
+    tahunDibuat: 1930
+    pembuat: Syech Albar (Perintis)
+    kategori: Dekorasi Musik
+    deskripsi: Gambus adalah alat musik petik tradisional yang berasal dari Timur
+      Tengah (Arab) dan berkembang pesat di wilayah Melayu, termasuk Indonesia, sebagai
+      hasil akulturasi budaya
+    slotID: Dalam_8
+    opsiIndex: 2
+  - itemName: Gong
+    itemSprite: {fileID: 21300000, guid: c71a9cb712b88774e8518b1304f637df, type: 3}
+    asalDaerah: Asia Tenggara dan Timur
+    tahunDibuat: Sebelum 2000 SM
+    pembuat: Pande Gong (Pengrajin logam)
+    kategori: Dekorasi Musik
+    deskripsi: Gong adalah alat musik perkusi (pukul) tradisional yang terbuat dari
+      logam (perunggu atau kuningan), berbentuk bulat, pipih, atau mangkuk dengan
+      tonjolan (pencu) di tengahnya. Berasal dari Asia Tenggara, alat ini menghasilkan
+      suara dalam dan bergetar saat dipukul dengan pemukul khusus, berfungsi dalam
+      gamelan, upacara adat, dan simbol spiritual.
+    slotID: Dalam_8
+    opsiIndex: 3
 --- !u!114 &799910610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23645,7 +23976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotID: Miniatur_1
   option1:
-    itemName: Candi
+    itemName: Candi Borobudur
     itemSprite: {fileID: 21300000, guid: 8551cc75f8669944db1fe0bdc68cf877, type: 3}
     price: 500
     ratingBonus: 0.2
@@ -23655,7 +23986,7 @@ MonoBehaviour:
     price: 2000
     ratingBonus: 0.3
   option3:
-    itemName: Istana
+    itemName: Istana Presiden
     itemSprite: {fileID: 21300000, guid: 062476ab6d531cf4da01ba40b5d7dc8f, type: 3}
     price: 5000
     ratingBonus: 0.2
@@ -27321,7 +27652,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -89.7218, y: 0, z: -471.9961, w: 0}
+  m_margin: {x: -89.7218, y: 0, z: -583.6555, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -27351,7 +27682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -99, y: -146}
+  m_AnchoredPosition: {x: -204, y: -117}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &992312232
@@ -48241,7 +48572,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -89.7218, y: 0, z: -280.41406, w: 0}
+  m_margin: {x: -89.7218, y: 0, z: -577.00964, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -48271,7 +48602,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -99, y: -4}
+  m_AnchoredPosition: {x: -204, y: 25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1773987638
